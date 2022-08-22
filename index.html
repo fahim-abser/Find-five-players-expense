@@ -37,12 +37,13 @@
                     <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/Tamim300x300.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-center fs-2">Tamim Iqbal</h5>
+                            <h5 class="card-title text-center fs-2">Tamim</h5>
                             <div class="d-flex text-white-50">
                                 <p class="ps-3">Runs- 2658</p>
                                 <p class="ps-5">120 Assists</p>
                             </div>
-                            <button class="btn btn-primary px-5 ms-5">SELECT</button>
+                            <button class="myBtn btn btn-primary px-5 ms-5"
+                                onclick="selectItem(this); this.disabled=true">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -50,12 +51,13 @@
                     <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/Sakib-al-hasan.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-center fs-2">Shakib Al Hasan</h5>
+                            <h5 class="card-title text-center fs-2">Shakib</h5>
                             <div class="d-flex text-white-50">
                                 <p class="ps-3">Runs- 2658</p>
                                 <p class="ps-5">120 Assists</p>
                             </div>
-                            <button class="btn btn-primary px-5 ms-5">SELECT</button>
+                            <button class="myBtn btn btn-primary px-5 ms-5"
+                                onclick="selectItem(this); this.disabled=true">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -69,38 +71,43 @@
                                 <p class="ps-3">Runs- 2658</p>
                                 <p class="ps-5">120 Assists</p>
                             </div>
-                            <button class="btn btn-primary px-5 ms-5">SELECT</button>
+                            <button class="myBtn btn btn-primary px-5 ms-5"
+                                onclick="selectItem(this); this.disabled=true">SELECT</button>
                         </div>
                     </div>
                 </div>
+                <!-- select start here  -->
                 <div class="card col-lg-3 card-bg text-light text-center">
-                    <h2 class="pt-3">Selected - V</h2>
+                    <h2 class="pt-3">Selected - <span id="selected-player">0</span></h2>
+                    <div id="player-name"></div>
                 </div>
             </div>
             <div class="row py-5">
                 <div class="col-lg-3">
                     <div class="card card-bg text-light" style="width: 18rem;">
-                        <img src="images/Tamim300x300.jpg" class="card-img-top img-fluid" alt="...">
+                        <img src="images/ImrulKayes.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-center fs-2">Tamim Iqbal</h5>
+                            <h5 class="card-title text-center fs-2">Imrul Kayes</h5>
                             <div class="d-flex text-white-50">
                                 <p class="ps-3">Runs- 2658</p>
                                 <p class="ps-5">120 Assists</p>
                             </div>
-                            <button class="btn btn-primary px-5 ms-5">SELECT</button>
+                            <button class="myBtn btn btn-primary px-5 ms-5"
+                                onclick="selectItem(this); this.disabled=true">SELECT</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card card-bg text-light" style="width: 18rem;">
-                        <img src="images/Sakib-al-hasan.jpg" class="card-img-top img-fluid" alt="...">
+                        <img src="images/Mohammad-Ashraful300x300.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-center fs-2">Shakib Al Hasan</h5>
+                            <h5 class="card-title text-center fs-2">Ashraful</h5>
                             <div class="d-flex text-white-50">
                                 <p class="ps-3">Runs- 2658</p>
                                 <p class="ps-5">120 Assists</p>
                             </div>
-                            <button class="btn btn-primary px-5 ms-5">SELECT</button>
+                            <button class="myBtn btn btn-primary px-5 ms-5"
+                                onclick="selectItem(this); this.disabled=true">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -108,37 +115,39 @@
                     <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/MushfiqurRahim300x300.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-center fs-2">MushfiqurRahim</h5>
+                            <h5 class="card-title text-center fs-2">Mushfiq</h5>
                             <div class="d-flex text-white-50">
                                 <p class="ps-3">Runs- 2658</p>
                                 <p class="ps-5">120 Assists</p>
                             </div>
-                            <button class="btn btn-primary px-5 ms-5">SELECT</button>
+                            <button class="myBtn btn btn-primary px-5 ms-5"
+                                onclick="selectItem(this); this.disabled=true">SELECT</button>
                         </div>
                     </div>
                 </div>
-
+                <!-- Budget section start here  -->
                 <div class=" card col-lg-3 card-bg ">
                     <h2 class="text-center my-4 text-light">Budget</h2>
                     <div class="text-white-50">
                         <div class="row">
                             <div class="col-4">Per Player</div>
-                            <div class="col-8 mb-2"><input type="text"></div>
+                            <div class="col-8 mb-2"><input id="budget-field" type="text"></div>
                         </div>
-                        <button class="btn btn-primary px-5 button my-2">Calculate</button>
-                        <p class="my-3">Player Expenses $ <span class="ps-4">0000</span> </p>
+                        <button id="calculate-btn" class="btn btn-primary px-5 button my-2">Calculate</button>
+                        <p class="my-3">Player Expenses $ <span id="player-expense-field" class="ps-4">0000</span> </p>
                         <div class="row">
                             <div class="col-4">Manager</div>
-                            <div class="col-8"><input type="text"></div>
+                            <div id="manager-field" class="col-8"><input id="manager-expense-field" type="text"></div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-4">Coach</div>
-                            <div class="col-8"><input type="text"></div>
+                            <div class="col-8"><input id="coach-expense-field" type="text"></div>
                         </div>
-                        <button class="btn btn-primary px-5 button my-3">Calculate Total</button>
+                        <button class="btn btn-primary px-5 button my-3" id="calculate-total-btn">Calculate
+                            Total</button>
                         <div class="row mt-2">
                             <div class="col-4">Total</div>
-                            <div class="col-8 ps-5 text-primary"> $<span>0000</span></div>
+                            <div class="col-8 ps-5 text-primary"> $<span id="final-amount">0000</span></div>
                         </div>
                     </div>
                 </div>
@@ -151,6 +160,8 @@
             <p class="text-light text-center">Copyright @ 2022 All Rights Reserved.</p>
         </footer>
     </main>
+    <script src="js/budgetCalculate.js"></script>
+    <script src="js/new.js"></script>
     <!-- bootstrap CDN  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
