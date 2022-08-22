@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Best Five Players</title>
+    <title>Best Player Selection</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-dark">
-    <header>
+    <header class="card-bg">
         <div class="row g-0">
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
@@ -34,7 +34,7 @@
         <section>
             <div class="row py-5">
                 <div class="col-lg-3">
-                    <div class="card bg-secondary text-light" style="width: 18rem;">
+                    <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/Tamim300x300.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">Tamim Iqbal</h5>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card bg-secondary text-light" style="width: 18rem;">
+                    <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/Sakib-al-hasan.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">Shakib Al Hasan</h5>
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="col-lg-3">
-                    <div class="card bg-secondary text-light" style="width: 18rem;">
+                    <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/Mahmudullah300x300.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">Mahmudullah</h5>
@@ -73,13 +73,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 bg-secondary text-light text-center">
+                <div class="card col-lg-3 card-bg text-light text-center">
                     <h2 class="pt-3">Selected - V</h2>
                 </div>
             </div>
             <div class="row py-5">
                 <div class="col-lg-3">
-                    <div class="card bg-secondary text-light" style="width: 18rem;">
+                    <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/Tamim300x300.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">Tamim Iqbal</h5>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card bg-secondary text-light" style="width: 18rem;">
+                    <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/Sakib-al-hasan.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">Shakib Al Hasan</h5>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card bg-secondary text-light" style="width: 18rem;">
+                    <div class="card card-bg text-light" style="width: 18rem;">
                         <img src="images/MushfiqurRahim300x300.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">MushfiqurRahim</h5>
@@ -118,15 +118,15 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 bg-secondary ">
-                    <h2 class="text-center mt-3 text-light">Budget</h2>
+                <div class=" card col-lg-3 card-bg ">
+                    <h2 class="text-center my-4 text-light">Budget</h2>
                     <div class="text-white-50">
                         <div class="row">
                             <div class="col-4">Per Player</div>
-                            <div class="col-8"><input type="text"></div>
+                            <div class="col-8 mb-2"><input type="text"></div>
                         </div>
-                        <button class="btn btn-primary px-5 button mt-2">Calculate</button>
-                        <p class="mt-3">Player Expenses $ <span class="ps-4">0000</span> </p>
+                        <button class="btn btn-primary px-5 button my-2">Calculate</button>
+                        <p class="my-3">Player Expenses $ <span class="ps-4">0000</span> </p>
                         <div class="row">
                             <div class="col-4">Manager</div>
                             <div class="col-8"><input type="text"></div>
@@ -135,20 +135,23 @@
                             <div class="col-4">Coach</div>
                             <div class="col-8"><input type="text"></div>
                         </div>
-                        <button class="btn btn-primary px-5 button mt-2">Calculate Total</button>
-                        <div class="row">
+                        <button class="btn btn-primary px-5 button my-3">Calculate Total</button>
+                        <div class="row mt-2">
                             <div class="col-4">Total</div>
-                            <div class="col-8 ps-5 text-dark"> $<span>0000</span></div>
+                            <div class="col-8 ps-5 text-primary"> $<span>0000</span></div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </section>
-        <section>
-
-        </section>
+        <!-- footer start here  -->
+        <footer>
+            <hr class="text-light pb-4">
+            <p class="text-light text-center">Copyright @ 2022 All Rights Reserved.</p>
+        </footer>
     </main>
+    <!-- bootstrap CDN  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>

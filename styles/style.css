@@ -1,5 +1,6 @@
 header h1 {
     font-family: 'Berkshire Swash', cursive;
+    font-size: 70px;
 }
 
 header {
@@ -7,9 +8,13 @@ header {
 }
 
 .button {
-    width: 302px;
+    width: 292px;
 }
 
 body {
     margin: 50px;
+}
+
+.card-bg {
+    background-color: black;
 }
